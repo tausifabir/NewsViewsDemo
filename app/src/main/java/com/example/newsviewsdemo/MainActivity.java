@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -17,17 +18,21 @@ import java.util.zip.Inflater;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
+    private RecyclerView recyclerView;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         drawerLayout = findViewById(R.id.drawerID);
-
+        recyclerView = findViewById(R.id.newsRecyclerView);
         NavigationView navigationView = findViewById(R.id.navigationID);
+
         navigationView.setNavigationItemSelectedListener(this);
         drawerToggle = new ActionBarDrawerToggle(this,
                 drawerLayout,

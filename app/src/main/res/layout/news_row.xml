@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/authorID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:hint="Author" />
+
+
+    <TextView
+        android:id="@+id/titleID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:hint="Title"
+        android:layout_below="@id/authorID"/>
+
+    <TextView
+        android:id="@+id/descriptionID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:hint="Description"
+        android:layout_below="@id/titleID"/>
+
+    <TextView
+        android:id="@+id/publishDateID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Publish Date"
+        android:layout_below="@id/descriptionID"/>
+
+    <TextView
+        android:id="@+id/urlID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="url"
+        android:layout_below="@id/publishDateID"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageurlID"
+        android:src="@drawable/ic_person_black_24dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

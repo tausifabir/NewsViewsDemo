@@ -3,67 +3,71 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="2dp"
-    app:cardElevation="3dp"
-    android:layout_margin="3dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp"
+    android:outlineAmbientShadowColor="@color/colorBatman"
     xmlns:tools="http://schemas.android.com/tools">
 
 
-
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
+        <ImageView
+            android:id="@+id/imageurlID"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_person_black_24dp"
+            />
         <TextView
             android:id="@+id/authorID"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
             android:textStyle="italic"
-            tools:text="author"/>
-
+            tools:text="author" />
 
         <TextView
             android:id="@+id/titleID"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:layout_marginTop="2dp"
             android:hint="Title"
-            android:layout_below="@id/authorID"/>
+            android:textStyle="bold"
+           />
 
         <TextView
             android:id="@+id/descriptionID"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="normal"
+            android:layout_marginTop="2dp"
             android:hint="Description"
-            android:layout_below="@id/titleID"/>
+             />
 
         <TextView
             android:id="@+id/publishDateID"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
             android:hint="Publish Date"
-            android:layout_below="@id/descriptionID"/>
+             />
 
         <TextView
             android:id="@+id/urlID"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
             android:hint="url"
-            android:layout_below="@id/publishDateID"/>
-
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="100dp"
-            android:id="@+id/imageurlID"
-            android:src="@drawable/ic_person_black_24dp"
-            android:scaleType="centerCrop"
-            android:layout_alignParentRight="true"
-
             />
 
-    </RelativeLayout>
+
+
+    </LinearLayout>
 
 
 </androidx.cardview.widget.CardView>

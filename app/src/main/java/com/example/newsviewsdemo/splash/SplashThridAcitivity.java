@@ -19,6 +19,7 @@ public class SplashThridAcitivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_thrid_acitivity);
+
         Intent intent = getIntent();
         helloTV = findViewById(R.id.hello);
         nameTV = findViewById(R.id.name);
